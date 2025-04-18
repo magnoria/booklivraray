@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
         body: Center(
           child: Column(
             children: [
-              TextButton(onPressed: () => {}, child: Text("도서추가"),
+              TextButton(onPressed: () => {Navigator.pushNamed(context, "/write")}, child: Text("도서추가"),
               ),
               SizedBox(height: 10),
 
