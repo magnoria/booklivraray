@@ -80,8 +80,8 @@ class _HomeState extends State<Home> {
                               trailing: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  IconButton(onPressed: ()=>{}, icon: Icon(Icons.edit)),
-                                  IconButton(onPressed: ()=>{}, icon: Icon(Icons.info)),
+                                  IconButton(onPressed: ()=>{Navigator.pushNamed(context, "/update" ,arguments: book['bno'])}, icon: Icon(Icons.edit)),
+                                  IconButton(onPressed: ()=>{Navigator.pushNamed(context, "/detail",arguments: book['bno'])}, icon: Icon(Icons.info)),
 
                                   IconButton(onPressed: (){
                                     showDialog(context: context, builder: (BuildContext context) {

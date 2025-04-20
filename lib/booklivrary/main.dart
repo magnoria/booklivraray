@@ -1,5 +1,7 @@
 
+import 'package:booklivraray/booklivrary/detail.dart';
 import 'package:booklivraray/booklivrary/home.dart';
+import 'package:booklivraray/booklivrary/update.dart';
 import 'package:booklivraray/booklivrary/write.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget{
       routes: {
         "/" : (context) => Home(),
         "/write" : (context) => Write(),
+        "/update" : (context) => Update(),
+        "/detail" : (context) => Detail(),
       },
     );
   }
